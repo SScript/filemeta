@@ -1,0 +1,50 @@
+body {
+  background-color: #7B96C1;
+  padding: 100px;
+  font-family: 'Raleway';
+  font-size: 15px;
+  font-weight: regular;
+  color: #E37054;
+
+}
+
+.jumbotron {
+  background-color: #525A68;
+  box-shadow: 0px 0px 55px 0px #394559;
+  padding: 20px;
+  border-radius: 0px;
+}
+
+.whiteBorder {
+    background-color: #474E5A;
+    border: 1px solid #747F91;
+    padding: 50px;
+}
+
+a, a:visited {
+  color: #444;
+}
+
+a:hover {
+  color: #7B96C1;
+  text-decoration: none;
+}
+
+
+.uploadButton {
+    border: 1px solid #E37054;
+    background-color: #474E5A;
+    cursor: pointer;
+    color: #E37054;
+
+}
+.uploadButton:hover {
+    border: 1px solid #7B96C1;
+    background-color: #474E5A;
+    cursor: pointer;
+    color: #7B96C1;
+}
+
+#submitButton {
+    visibility: hidden;
+}

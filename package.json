@@ -1,0 +1,23 @@
+{
+  "name": "filemeta",
+  "version": "1.0.0",
+  "description": "File Metadata Microservice freecodecamp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SScript/filemeta.git"
+  },
+  "author": "SScript",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SScript/filemeta/issues"
+  },
+  "homepage": "https://github.com/SScript/filemeta#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "multer": "^1.3.0"
+  }
+}

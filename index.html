@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Metadata Service</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="whiteBorder">
+            <h1>File Metadata Microservice</h1>
+            <br>
+            <form enctype="multipart/form-data" action="/uploads/" method="post"> 
+                <div id="yourBtn" onclick="getFile()" class="btn btn-default uploadButton">File</div>
+                <input id="upfile" type="file" name="file" value="upload" onchange="sub(this)" hidden>
+                <button id="submitButton" type="submit" class="btn uploadButton">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    function getFile(){
+        document.getElementById("upfile").click();
+    }
+    function sub(obj){
+        var file = obj.value;
+        var fileName = file.split("\\");
+        document.getElementById("yourBtn").innerHTML = fileName[fileName.length-1];
+        document.getElementById('submitButton').style.visibility = 'visible';
+    }
+</script>
+</body>
+</html>
