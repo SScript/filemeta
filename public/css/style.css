@@ -44,7 +44,3 @@ a:hover {
     cursor: pointer;
     color: #7B96C1;
 }
-
-#submitButton {
-    visibility: hidden;
-}

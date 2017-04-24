@@ -19,7 +19,7 @@
             <form enctype="multipart/form-data" action="/uploads/" method="post"> 
                 <div id="yourBtn" onclick="getFile()" class="btn btn-default uploadButton">File</div>
                 <input id="upfile" type="file" name="file" value="upload" onchange="sub(this)" hidden>
-                <button id="submitButton" type="submit" class="btn uploadButton">Submit</button>
+                <button id="submitButton" style="visibility: hidden;" type="submit" class="btn uploadButton">Submit</button>
             </form>
             </div>
         </div>
@@ -32,7 +32,11 @@
         var file = obj.value;
         var fileName = file.split("\\");
         document.getElementById("yourBtn").innerHTML = fileName[fileName.length-1];
-        document.getElementById('submitButton').style.visibility = 'visible';
+        document.getElementById('submitButton').style.visibility = 'visible'
+        if (file == "") {
+            document.getElementById("yourBtn").innerHTML = "File"
+            document.getElementById('submitButton').style.visibility = 'hidden'
+        }
     }
 </script>
 </body>
